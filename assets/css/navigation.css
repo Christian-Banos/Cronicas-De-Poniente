@@ -1,0 +1,78 @@
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Navigation Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var( --primary-bg);
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+        width: 130px; /* Tamaño convencional para logos */
+        height: auto; /* Mantiene la proporción */
+        object-fit: contain; /* Asegura que la imagen se ajuste sin distorsión */
+        transform: scale(1.5); /* aumenta el tamaño de la imagen en un 20% */
+        transform-origin: center; /* el escalado se hace desde el centro */
+        margin: 1rem;
+    }
+
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    font-size: 23px;
+}
+
+.nav-menu li a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    font-size: 1.2rem;
+}
+
+.nav-menu li a:hover {
+    color: var(--hold-gold);
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 0.5rem;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: var(--text-light);
+    transition: all 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(10px, 10px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+}

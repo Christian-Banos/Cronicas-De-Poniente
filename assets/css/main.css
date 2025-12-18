@@ -1,0 +1,207 @@
+.divider{
+    width: 80%;
+    border: 0;
+    height: 3px;
+    background: linear-gradient(to right, transparent, var(--hold-gold), transparent);
+    margin: 2rem auto;
+    opacity: 0.5;
+    
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 100%;
+
+}
+
+.houses{
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+}
+
+.header-houses{
+    display: flex;
+    justify-content: space-around;
+    /* background-image: url(../images/fotoDePersonajes.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */;
+}
+
+.header-houses h2{
+    font-size: 2.3rem;
+    color: var(--hold-gold);
+    text-shadow: 2px 2px 4px var(--secondary-bg);
+}
+
+
+
+/* === casas === */
+.card-houses{
+    background: rgba(63, 78, 90, 0.3); /* tu color con transparencia */
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); /* para Safari */
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 1rem;
+    margin: 0 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0.9;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.card-houses:hover{
+    background-color: var(--secondary-bg);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card-houses img{
+    width: 800px;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.title-house{
+    color: var(--hold-gold);
+    margin-bottom: 5px;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 4px var(--primary-bg);
+}
+
+.text-houses{
+    text-align: justify;
+}
+
+.stark-house{
+    display: flex;
+    gap: 1rem;
+}
+
+.targaryen-house{
+display: flex;
+gap: 1rem;
+}
+
+.lannister-house{
+display: flex;
+gap: 1rem;
+}
+
+/* === libros === */
+.title-libros{
+    color: var(--hold-gold);
+    text-align: center;
+    margin-bottom: 2.5rem;
+    margin-top: 3rem;
+    font-size: 2.1rem;
+    text-shadow: 2px 2px 4px var(--secondary-bg);
+}
+
+.books{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+    max-width: 100%;
+}
+
+.portada{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 100%;
+}
+
+.portada img{
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.portada img:hover{
+    scale: 1.05;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* === fondos de pantalla === */
+.title-fondos{
+    font-size: 2.3rem;
+    color: var(--hold-gold);
+    text-shadow: 2px 2px 4px var(--secondary-bg);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* carrusel de imagenes */
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    overflow: hidden;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+    width: 100%;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.4);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.fondos{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 100%;
+    margin: 2rem;
+}
+
+.fondos img{
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

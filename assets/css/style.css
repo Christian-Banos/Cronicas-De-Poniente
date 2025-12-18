@@ -1,0 +1,65 @@
+/* imports */
+@import url("./navigation.css");
+@import url("./hero.css");
+@import url("./main.css");
+@import url("./responsive.css");
+@import url("./footer.css");
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CSS Variables from Figma design */
+:root {
+  --primary-bg: #141e2a; /* Azul hielo — Norte / Invernalia */
+  --secondary-bg: #3f4e5a; /* . Gris acero — Espadas / Guardia de la Noche */
+  --silver-accent: #a0a7ad; /*  Plata oscura — Valyria / Dragonglass vibe*/
+  --text-light: #ffffff; /*  Blanco nieve*/
+  --fire-muted: #8b1e1e; /* Rojo fuego — Targaryen / Dragones*/
+  --hold-gold: #c2a265; /* dorado*/
+
+  /* tipografia */
+  --title: "ADLaM Display", sans-serif;
+  --body: adamina, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--body);
+  background-color: var(--primary-bg);
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+.decorative-regular{
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.decorative-bold{
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.decorative-black{
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+/* error page */
+.html-error{
+  background-image: url(../images/error404.png);
+  background-size: cover;
+  background-position: center;
+  height: 100vw;
+}
